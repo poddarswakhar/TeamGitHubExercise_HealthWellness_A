@@ -5,10 +5,10 @@ public class function_tests {
 
     @Test
     public void testAuthenticateLengthTrue(){
-        assertEquals(true, functions.authenticateLength("Christmas", 4));
+        assertEquals(true, functions.authenticateLength("Christmas"));
     }
     @Test
     public void testAuthenticateLengthFalse(){
-        assertEquals(false, functions.authenticateLength("Christmas", 10));
+        assertEquals(false, functions.authenticateLength("Christ"));
     }
 }
