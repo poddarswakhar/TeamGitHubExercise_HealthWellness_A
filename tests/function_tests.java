@@ -16,10 +16,25 @@ public class function_tests {
     public void testSpecialCharacterTrue() {assertEquals(true, functions.specialCharacter("password!"));}
     @Test
     public void testSpecialCharacterFalse() {assertEquals(false, functions.specialCharacter("password"));}
-    
-    
+
+
     @Test
     public void testForNumbersTrue() {assertEquals(true, functions.hasNum("password123"));}
     @Test
     public void testForNumbersFalse() {assertEquals(false, functions.hasNum("password"));}
+
+    @Test
+    public void upperCaseTrueCases(){
+        assertEquals(true, functions.oneUpperCase("Password!"));
+        assertEquals(true, functions.oneUpperCase("passworD!"));
+        assertEquals(true, functions.oneUpperCase("passWord!"));
+        assertEquals(true, functions.oneUpperCase("PASSMEWORD!"));
+    }
+
+    @Test
+    public void upperCaseFalseCases(){
+        assertEquals(false, functions.oneUpperCase("password"));
+        assertEquals(false, functions.oneUpperCase("passw!rd"));
+
+    }
 }
