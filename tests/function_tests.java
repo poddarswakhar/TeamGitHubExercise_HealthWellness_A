@@ -17,6 +17,12 @@ public class function_tests {
     @Test
     public void testSpecialCharacterFalse() {assertEquals(false, functions.specialCharacter("password"));}
 
+
+    @Test
+    public void testForNumbersTrue() {assertEquals(true, functions.hasNum("password123"));}
+    @Test
+    public void testForNumbersFalse() {assertEquals(false, functions.hasNum("password"));}
+
     @Test
     public void upperCaseTrueCases(){
         assertEquals(true, functions.oneUpperCase("Password!"));
