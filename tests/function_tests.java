@@ -21,5 +21,5 @@ public class function_tests {
     @Test
     public void testForNumbersTrue() {assertEquals(true, functions.hasNum("password123"));}
     @Test
-    public void testForNumbersFalse() {assertEquals(true, functions.hasNum("password"));}
+    public void testForNumbersFalse() {assertEquals(false, functions.hasNum("password"));}
 }
