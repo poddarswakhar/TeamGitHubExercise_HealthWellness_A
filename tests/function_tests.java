@@ -11,4 +11,9 @@ public class function_tests {
     public void testAuthenticateLengthFalse(){
         assertEquals(false, functions.authenticateLength("Christ"));
     }
+
+    @Test
+    public void testSpecialCharacterTrue() {assertEquals(true, functions.specialCharacter("password!"));}
+    @Test
+    public void testSpecialCharacterFalse() {assertEquals(false, functions.specialCharacter("password"));}
 }
