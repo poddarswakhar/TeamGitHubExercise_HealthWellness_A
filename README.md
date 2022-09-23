@@ -6,3 +6,6 @@ This repo is the repo for team GitHub exercise - Health/Wellness - GroupA
 ## Method - specialCharacters():
 - Takes in one parameter, a string for the password.
 - The method checks that the string contains one of the following special characters [!@#$%&*()_+=|<>?{}\[\]~-] and returns true if at least one is found.
+## Method - oneUpperCase():
+- Takes in one parameter, a string for the password.
+- The method checks if the password contains at least one upper case alphabet

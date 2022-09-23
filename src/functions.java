@@ -15,4 +15,13 @@ public class functions {
         Matcher hasSpecial = special.matcher(password);
         return hasSpecial.find();
     }
+    // password, checking if it contains at least one upper case
+    public static boolean oneUpperCase(String password){
+        for(char c: password.toCharArray()){
+            if (Character.isUpperCase(c)){
+                return true;
+            }
+        }
+        return false;
+    }
 }
