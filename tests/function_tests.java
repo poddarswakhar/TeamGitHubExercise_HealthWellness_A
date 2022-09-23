@@ -16,4 +16,10 @@ public class function_tests {
     public void testSpecialCharacterTrue() {assertEquals(true, functions.specialCharacter("password!"));}
     @Test
     public void testSpecialCharacterFalse() {assertEquals(false, functions.specialCharacter("password"));}
+    
+    
+    @Test
+    public void testForNumbersTrue() {assertEquals(true, functions.hasNum("password123"));}
+    @Test
+    public void testForNumbersFalse() {assertEquals(true, functions.hasNum("password"));}
 }
