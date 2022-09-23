@@ -9,3 +9,6 @@ This repo is the repo for team GitHub exercise - Health/Wellness - GroupA
 ## Method - oneUpperCase():
 - Takes in one parameter, a string for the password.
 - The method checks if the password contains at least one upper case alphabet
+## Method - hasNum():
+- Takes in one parameter, a string for the password
+- Checks each character of the string to see if it is a number, if it is then the method returns true if at least 1 is found
