@@ -16,15 +16,16 @@ public class functions {
         return hasSpecial.find();
     }
 
-    public static boolean hasNum(String password){
+    public static boolean hasNum(String password) {
         char[] chars = password.toCharArray();
-        for(char c : chars){
-           if(Character.isDigit(c)){
-              return true;
-           } else
-        	   continue;
+        for (char c : chars) {
+            if (Character.isDigit(c)) {
+                return true;
+            } else
+                continue;
         }
-       return false;
+        return false;
+    }
     // password, checking if it contains at least one upper case
     public static boolean oneUpperCase(String password){
         for(char c: password.toCharArray()){
